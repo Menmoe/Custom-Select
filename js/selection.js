@@ -80,7 +80,6 @@ export class Selection {
             optionElement.addEventListener('click', () => {
                 this.#selectedOption = this.value;
                 this.setValue(optionElement.innerText);
-                this.toggleShow();
                 Utils.getElementByInnerText(this.#optionsListElement, this.#selectedOption).classList.remove('custom-select-option-selected');
                 optionElement.classList.add('custom-select-option-selected');
             });
